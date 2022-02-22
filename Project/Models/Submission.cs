@@ -15,6 +15,17 @@ namespace Project.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Submission_Id { get; set; }
 
+        #region
+
+        [Display(Name = "AssignmentId")]
+        [Required]
+     // [ForeignKey(nameof(Submission.Assignment))]
+        public int AssignmentId { get; set; }
+
+     // public Submission Submission { get; set; }
+
+        #endregion
+
 
         [Display(Name = "Submission Time")]
         [Required]

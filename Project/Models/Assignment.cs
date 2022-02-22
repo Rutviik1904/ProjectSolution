@@ -10,8 +10,6 @@ namespace Project.Models
     public class Assignment
     {
         [Display(Name = "Assignment Id")]
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Assignment_Id { get; set; }
 
 
@@ -20,6 +18,7 @@ namespace Project.Models
         [StringLength(20)]
         [Column(TypeName = "varchar")]
         public string Assignment_Title { get; set; }
+
 
         [Display(Name = "Description")]
         public string Description { get; set; }

@@ -10,15 +10,20 @@ namespace Project.Models
     [Table("Students")]
     public class Student
     {
+
+
         [Display(Name = "Student Id")]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Student_Id { get; set; }
 
+
         [Display(Name = "Enrollment Number")]
         [Required]
         [StringLength(20)]
         public string Enroll_No { get; set; }
+
+
 
         [Display(Name = "Date of Birth")]
         [Required]
@@ -32,9 +37,11 @@ namespace Project.Models
         [Required]
         public int Semester { get; set; }
 
-        
 
-        
+
+
+
+
 
 
     }
