@@ -11,9 +11,6 @@ namespace Project.Models
     [Table("UserInfo")]
     public class UserInfo
     {
-
-
-
         [Display(Name = "User ID")]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
